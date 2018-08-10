@@ -11,6 +11,7 @@ date:       2018-08-09
 
     usage: python3 portal.py [-h] [-a {login,logout,check_status}] [-u USERNAME]
                  [-p PASSWORD] [-m MAX_RETRIES] [-t INTERVAL] [-l] [-f]
+                 [-d DAEMON]
 
     optional arguments:
     -h, --help            show this help message and exit
@@ -27,3 +28,10 @@ date:       2018-08-09
     -l, --local-only      Tsinghua connections only, without access to the
                             internet
     -f, --force           login/out without checking online status
+    -d DAEMON, --daemon DAEMON
+                            run in daemon mode, recheck interval in seconds,
+                            default 0 for non-daemon mode
+
+
+> 2018.08.10 
+>   增加 daemon mode (for Linux)
